@@ -10,34 +10,54 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assignment.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <nav>
-            <a>Logo</a>
+            <img src='logo.png' width='70px'>
             <a>Menu</a>
             <a>Login</a>
         </nav>
-        <h1>Preview</h1>
-        <img>
-        <form>
-            <label>Cheese</label>
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
+        <div class="container">
+            <h1>Preview</h1>
+            <picture>
+                <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+                <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+                <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+              </picture>
+            <h2>Customize your Pizza</h2>
+            <form>
+                <label>Size</label><br>
+                <input type="radio" id='6"' value='6"' name="size">
+                <label for='6"'>6" Personal Pizza RM 10.00</label><br>
+                <input type="radio" id='6"' value='6"' name="size">
+                <label for='6"'>6" Personal Pizza RM 10.00</label><br>
+                <input type="radio" id='6"' value='6"' name="size">
+                <label for='6"'>6" Personal Pizza RM 10.00</label><br>
 
-            <label>Crust</label>
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
+                <label>Cheese</label><br>
+                <input type="radio" id='6"' value='6"' name="cheese">
+                <label for='6"'>6" Personal Pizza RM 10.00</label><br>
+                <input type="radio" id='6"' value='6"' name="cheese">
+                <label for='6"'>6" Personal Pizza RM 10.00</label><br>
+                <input type="radio" id='6"' value='6"' name="cheese">
+                <label for='6"'>6" Personal Pizza RM 10.00</label><br>
 
-            <input type="submit">
-            <a>Back</a>
-        </form>
+                <label>Crust</label><br>
+                <input type="radio" id='6"' value='6"' name="crust">
+                <label for='6"'>6" Personal Pizza RM 10.00</label><br>
+                <input type="radio" id='6"' value='6"' name="crust">
+                <label for='6"'>6" Personal Pizza RM 10.00</label><br>
+                <input type="radio" id='6"' value='6"' name="crust">
+                <label for='6"'>6" Personal Pizza RM 10.00</label><br>
+
+                <input type="submit">
+                <a>Back</a>
+            </form>
+        </div>
         <script src="" async defer></script>
     </body>
 </html>

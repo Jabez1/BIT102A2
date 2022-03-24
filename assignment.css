@@ -1,0 +1,29 @@
+html, body{
+    background-color: #2E2E2E;
+    color: #FFEA00;
+    margin: 0px;
+}
+
+nav img{
+    margin-right:auto;
+}
+nav{
+    padding: 0px 50px;
+    background-color: #181818;
+    height: 70px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.login{
+
+}
+
+.container{
+    margin:0 10%;
+}
