@@ -2,6 +2,7 @@ html, body{
     background-color: #2E2E2E;
     color: #FFEA00;
     margin: 0px;
+    font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
 }
 
 nav img{
@@ -24,6 +25,23 @@ nav a {
 
 }
 
+fieldset{
+    margin: 25px 0px;
+    padding: 15px;
+}
+
+legend{
+    font-size: 1.2em;
+}
+
 .container{
     margin:0 10%;
+}
+
+.pizpreview{
+    text-align: center;
+    
+}
+
+.button{
 }
