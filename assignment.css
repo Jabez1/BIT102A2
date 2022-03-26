@@ -13,9 +13,14 @@ footer{
     padding: 20px 50px;
     margin-top: 100px;
 }
-nav img{
+
+
+.logo{
     margin-right:auto;
+    padding: 0px;
 }
+
+
 nav{
     padding: 0px 50px;
     background-color: #181818;
@@ -24,9 +29,14 @@ nav{
     justify-content: flex-end;
 }
 
-nav a {
+nav a{
     font-size: 1.5em;
     padding: 20px;
+}
+
+nav a:link, nav a:visited{
+    color: #FFEA00;
+    text-decoration: none;
 }
 
 
