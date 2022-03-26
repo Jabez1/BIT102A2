@@ -11,7 +11,7 @@ footer{
     height:100px;
     color: #181818;
     padding: 20px 50px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 
@@ -109,4 +109,33 @@ input[type='radio']:checked:after {
     display: inline-block;
     visibility: visible;
     border: 2px solid white;
+}
+
+/*checkout table*/
+table{
+    border-collapse: collapse;
+    width:100%;
+    font-size:1.3em;
+}
+
+td{
+    border: 7px ridge #181818;
+}
+
+/*forms*/
+
+.formrow{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin: 25px 0;
+}
+
+.formrow input{
+    width:50%;
+    padding: 10px;
+    background-color: #d1d3d1;
+    color:#181818;
+    border: 1px solid #181818;
+    border-radius: 8px;
 }

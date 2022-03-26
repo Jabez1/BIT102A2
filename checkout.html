@@ -24,28 +24,47 @@
             <a href="menu.html">Menu</a>
             <a href="login.html">Login</a>
         </nav>
+        <div class="container">
         <h1>Order List</h1>
         <table>
             <tr>
                 <td>Pizza 1 with toppings</td>
-                <td>USD$1000</td>
+                <td>USD$1000.00</td>
             </tr>
             <tr>
                 <td>Pizza 2 with toppings</td>
-                <td>USD$3000</td>
+                <td>USD$3000.00</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>Total:</b></td>
+                <td>USD$4000.00</td>
             </tr>
         </table>
-
+        <br>
         <form>
-            <label>Address</label>
-            <input placeholder="Enter your Address">
-
-            <label>Contact No.</label>
-            <input placeholder="Enter your Contact Number">
-        
-            <input type="submit" value="Proceed to Payment">
-            <a>Back</a>
+            <div class="formrow">
+                <label>Address:</label>
+                <input placeholder="Enter your Address">
+            </div>
+            <div class="formrow">
+                <label>Contact No.:</label>
+                <input placeholder="Enter your Contact Number">
+            </div>
+            <br>
+            <br>
+            <div class="buttoncontainer">
+                <input type="submit" class="button" value="Proceed">
+                <button class="button">Back</button>
+            </div>
         </form>
+        </div>
+        <footer>
+            &copy; Copyright 2022
+        </footer>
         <script src="" async defer></script>
     </body>
 </html>
