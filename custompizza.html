@@ -20,25 +20,20 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <nav>
-            <img src='logo.png' width='70px'>
-            <a>Menu</a>
-            <a>Login</a>
+            <a href="index.html"><img src='logo.png' width='70px'></a>
+            <a href="menu.html">Menu</a>
+            <a href="login.html">Login</a>
         </nav>
         <div class="container">
             <h1>Preview</h1>
             <div class='pizpreview'>
-                <picture>
-                    <source media="(min-width:650px)" srcset="pizzapep.png">
-                    <source media="(min-width:465px)" srcset="pizzapreview.jpg">
-                    <img src="pizzapep.png" alt="PizzaPreview" style="width:auto;">
-                </picture>
+                <img src="pizzapep.png" alt="PizzaPreview" style="width:150px;" id="pizzaPreview">
             </div>
             <h2>Customize your Pizza</h2>
-            <form>
-
+            <form action="checkout.html method="get">
                 <fieldset>
                     <legend>Size</legend>
-                    <input type="radio" id='6"' value='6"' name="size">
+                    <input type="radio" id='6"' value='6"' name="size"  checked="checked">
                     <label for='6"'>6" Personal Pizza RM 15.00</label><br>
                     <input type="radio" id='9"' value='9"' name="size">
                     <label for='9"'>9" Regular Pizza RM 30.00</label><br>
@@ -48,7 +43,7 @@
 
                 <fieldset>
                     <legend>Cheese</legend>
-                    <input type="radio" id='ncheese' value='ncheese' name="cheese">
+                    <input type="radio" id='ncheese' value='ncheese' name="cheese"  checked="checked">
                     <label for='ncheese'>Normal RM 2.00</label><br>
                     <input type="radio" id='echeese"' value='echeese' name="cheese">
                     <label for='echeese'>6" Extra Cheese RM 4.00</label><br>
@@ -58,7 +53,7 @@
 
                 <fieldset>
                     <legend>Crust</legend>
-                    <input type="radio" id='ncrust' value='ncrust' name="crust">
+                    <input type="radio" id='ncrust' value='ncrust' name="crust"  checked="checked"  >
                     <label for='ncrust'>Normal Crust</label><br>
                     <input type="radio" id='nycrust' value='nycrust' name="crust">
                     <label for='nycrust'>New York Crust</label><br>
@@ -69,7 +64,7 @@
                 </fieldset>
 
                 <div class="buttoncontainer">
-                    <input class="button" type="submit">
+                    <input class="button" type="submit" value="Confirm">
                     <button class="button">Back</button>
                 </div>
                 
@@ -79,6 +74,6 @@
         <footer>
             &copy; Copyright 2022
         </footer>
-        <script src="" async defer></script>
+        <script src="pizzapreview.js" async defer></script>
     </body>
 </html>
