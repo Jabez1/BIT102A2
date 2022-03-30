@@ -143,6 +143,7 @@ input[type=text], input[type=password]{
     color:#181818;
     border: 1px solid #181818;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 select{
@@ -153,4 +154,16 @@ select{
     border: 1px solid #181818;
     border-radius: 8px;
     font-weight: 700;
+    box-sizing: border-box;
 }
+
+@media screen and (max-width: 600px){
+    .formrow{
+        flex-direction: column;
+    }
+    input[type=text], input[type=password], select{
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
