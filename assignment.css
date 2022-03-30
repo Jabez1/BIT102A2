@@ -4,6 +4,7 @@ html, body{
     color: #FFEA00;
     margin: 0px;
     font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
+    height:100%;
 }
 
 footer{
@@ -12,6 +13,7 @@ footer{
     color: #181818;
     padding: 20px 50px;
     margin-top: 50px;
+    min-height: calc(100vh - 450px);
 }
 
 
@@ -131,7 +133,7 @@ td{
     margin: 25px 0;
 }
 
-.formrow input[type=text]{
+input[type=text], input[type=password]{
     width:50%;
     padding: 10px;
     background-color: #d1d3d1;
