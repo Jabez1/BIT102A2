@@ -1,9 +1,141 @@
+/*Global*/
+html, body{
+    background-color: #2E2E2E;
+    color: #FFEA00;
+    margin: 0px;
+    font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
+}
+
+footer{
+    background-color: #FF7417;
+    height:100px;
+    color: #181818;
+    padding: 20px 50px;
+    margin-top: 50px;
+}
+
+
+.logo{
+    margin-right:auto;
+    padding: 0px;
+}
+
+
+nav{
+    padding: 0px 50px;
+    background-color: #181818;
+    height: 70px;
+    display:flex;
+    justify-content: flex-end;
+}
+
 nav a{
-    margin:20px;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+a:link, a:visited{
+    color: #FFEA00;
+    text-decoration: none;
+}
+
+
+/*Fieldset Radio Button*/
+fieldset{
+    margin: 25px 0px;
+    padding: 15px;
+}
+
+legend{
+    font-size: 1.2em;
 }
 
 .container{
-    margin: 50px 10%;
-    width: auto;
-    padding: 0;
+    margin:0 10%;
+}
+
+.pizpreview{
+    text-align: center;
+    
+}
+
+.button{
+    border: 2px solid #FF9212;  
+    border-radius: 10px;
+    width: 160px;
+    font-size: 1.5em;
+    text-align: center;
+    height:50px;
+    line-height: 50px;
+    background-color: #2E2E2E;
+    color:#FFEA00;
+    padding:0px;
+}
+
+.button:hover{
+    background-color: #FF9212;
+    color: #181818;
+}
+
+.buttoncontainer{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: 0px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: 0px;
+    left: -1px;
+    position: relative;
+    background-color: #FF9212;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+/*checkout table*/
+table{
+    border-collapse: collapse;
+    width:100%;
+    font-size:1.3em;
+}
+
+td{
+    border: 7px ridge #181818;
+}
+
+/*forms*/
+
+.formrow{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin: 25px 0;
+}
+
+.formrow input{
+    width:50%;
+    padding: 10px;
+    background-color: #d1d3d1;
+    color:#181818;
+    border: 1px solid #181818;
+    border-radius: 8px;
 }
