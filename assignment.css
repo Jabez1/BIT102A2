@@ -131,7 +131,7 @@ td{
     margin: 25px 0;
 }
 
-.formrow input{
+.formrow input[type=text]{
     width:50%;
     padding: 10px;
     background-color: #d1d3d1;
