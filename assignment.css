@@ -124,6 +124,9 @@ td{
     border: 7px ridge #181818;
 }
 
+table tr:last-child { 
+    background-color: #d1d3d1; 
+    color:#181818;}
 /*forms*/
 
 .formrow{
@@ -140,4 +143,14 @@ input[type=text], input[type=password]{
     color:#181818;
     border: 1px solid #181818;
     border-radius: 8px;
+}
+
+select{
+    width: 50%;
+    padding: 10px;
+    background-color: #d1d3d1;
+    color:#181818;
+    border: 1px solid #181818;
+    border-radius: 8px;
+    font-weight: 700;
 }
