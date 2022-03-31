@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="loginsignup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <form action="action_page.php" class="loginform">
+                <h1 style="margin-top: 0px">Login</h1>
+                <p>Log into your existing account. Don't have an existing account? 
+                    <a href="signup.html" style="color:dodgerblue">Sign up for a new account</a></p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <br>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                    Keep me logged in
+                </label>
+
+            
+                <div class="clearfix">
+                  <input type="submit" class="signupbtn button" value="Login">
+                  <button type="button" class="cancelbtn button" onclick="location.href='index.html';">Cancel</button>
+                </div>
+
+              </form>
+              
+            </div>
+        <script src="" async defer></script>
+    </body>
+</html>

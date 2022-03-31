@@ -4,6 +4,7 @@ html, body{
     color: #FFEA00;
     margin: 0px;
     font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
+    height:100%;
 }
 
 footer{
@@ -12,6 +13,7 @@ footer{
     color: #181818;
     padding: 20px 50px;
     margin-top: 50px;
+    min-height: calc(100vh - 450px);
 }
 
 
@@ -122,6 +124,9 @@ td{
     border: 7px ridge #181818;
 }
 
+table tr:last-child { 
+    background-color: #d1d3d1; 
+    color:#181818;}
 /*forms*/
 
 .formrow{
@@ -131,11 +136,34 @@ td{
     margin: 25px 0;
 }
 
-.formrow input{
+input[type=text], input[type=password]{
     width:50%;
     padding: 10px;
     background-color: #d1d3d1;
     color:#181818;
     border: 1px solid #181818;
     border-radius: 8px;
+    box-sizing: border-box;
 }
+
+select{
+    width: 50%;
+    padding: 10px;
+    background-color: #d1d3d1;
+    color:#181818;
+    border: 1px solid #181818;
+    border-radius: 8px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px){
+    .formrow{
+        flex-direction: column;
+    }
+    input[type=text], input[type=password], select{
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
