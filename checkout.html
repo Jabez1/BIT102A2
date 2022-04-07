@@ -48,7 +48,7 @@
             </tr>
         </table>
         <br>
-        <form action="index.html" method="get">
+        <form action="index.html" method="get" onsubmit="orderReceived();">
             <div class="formrow">
                 <label>Address Line 1:</label>
                 <input type="text" placeholder="Enter Your Address Line 1" required>
@@ -66,17 +66,12 @@
                 <select name="dtime" id="dtime">
                   </select>
             </div>
-            <div class="formrow">
-                <label>State:</label>
-                <input placeholder="Enter your Contact Number">
-            </div>
             <br>
             <br>
             <div class="buttoncontainer">
                 <input type="submit" class="button" value="Proceed">
-                <button type="button" class="button" onclick="location.href='menu.html';">Back</button>
+                <button type="button" class="button" onclick="location.href='custompizza.html';">Back</button>
             </div>
-            <button onclick="httpGetAsync(window.location.href, myDisplayer)">test</button>
         </form>
         </div>
         <footer>

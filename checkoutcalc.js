@@ -15,15 +15,21 @@ function getUrlParamArray(param)
 //calculates the cost from how the pizza is customized
 function costCalc(){
     var cost = 0;
+    var size= "";
+    var cheese= "";
+    var crust="";
     switch(getUrlParamArray("size").toString()) {
         case "6\"":
             cost += 15;
+            size = "Personal";
             break;
         case "9\"":
             cost += 30;
+            size = "Regular";
             break;
         case "12\"":
             cost += 50;
+            size = "Large";
             break;
         default:
             cost -= 9999;
@@ -32,12 +38,15 @@ function costCalc(){
     switch(getUrlParamArray("cheese").toString()) {
         case "ncheese":
             cost += 2;
+            cheese = "normal";
             break;
         case "echeese":
             cost += 4;
+            cheese = "extra";
             break;
         case "e2cheese":
             cost += 5;
+            cheese = "extra extra";
             break;
         default:
             cost -= 9999;
@@ -45,15 +54,27 @@ function costCalc(){
 
     switch(getUrlParamArray("crust").toString()) {
         case "ncrust":
+            crust = "normal";
+            break;
         case "nycrust":
+            crust = "new york";
             break;
         case "cbcrust":
+            crust = "cheese burst";
+            break;
         case "bbqcrust":
             cost += 5;
+            crust = "bbq";
             break;
         default:
             cost -= 9999;
     }
+
+    //Inputs the values into the table
+    table = document.getElementById("table");
+    table.rows[0].cells[0].innerHTML = ""+ size + " Pizza with "
+    + cheese + " cheese and " + crust+  " crust";
+
     return cost;
 }
 
@@ -69,10 +90,7 @@ function timeArray(){
     return tArray;
 }
 
-//Inputs the values into the table
-table = document.getElementById("table");
-table.rows[0].cells[0].innerHTML = ""+ getUrlParamArray("size") + " Pizza with "
-+ getUrlParamArray("cheese")+ " cheese and " + getUrlParamArray("crust")+" crust";
+
 
 table.rows[0].cells[1].innerHTML = "RM" + costCalc() +".00";
 //adds a value to the total
@@ -89,4 +107,10 @@ for(var i = 0; i < tArray.length; i++){
     option.appendChild(txt);
     option.setAttribute("value",tArray[i]);
     dtime.insertBefore(option,dtime.lastChild);
+}
+
+
+//order message
+function orderReceived() {
+    alert("Your order has been received!");
 }
