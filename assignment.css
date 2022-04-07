@@ -29,16 +29,20 @@ footer{
 nav{
     padding: 0px 50px;
     background-color: #181818;
-    height: 70px;
     display:flex;
     justify-content: flex-end;
 }
 
 nav a{
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 0 20px;
     font-weight: bold;
-    line-height: 70px;
+}
+
+nav img{
+    width: 7rem;
+    border-radius: 5rem;
+    padding: 10px 10px;
 }
 
 a:link, a:visited{
@@ -46,6 +50,29 @@ a:link, a:visited{
     text-decoration: none;
 }
 
+nav > ul > li {
+    margin: 0;
+    padding: 40px 20px;
+    cursor: pointer;
+}
+
+nav > ul {
+    margin:0;
+    font-weight: bold;
+    list-style-type: none;
+    display:flex;
+}
+
+nav > ul > li:hover a {
+    color: black !important;
+    transition: color 0.5s ease-in-out;
+}
+
+nav > ul > li:hover {
+    background-color: #FFEA00;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+}
 
 /*Fieldset Radio Button*/
 fieldset{

@@ -82,7 +82,7 @@ function costCalc(){
 function timeArray(){
     var today = new Date();
     var tArray = [];
-    for(var i = 0; i< 10; i++){
+    for(var i = 0; i< 20; i++){
         var future = new Date(today.getTime() + 15*60000*[i+1]); //adds 15 minutes and 15 additional 
         //minutes each iteration 
         tArray[i]= future.toLocaleTimeString('en-US', { hour: "numeric", minute: "numeric"});
