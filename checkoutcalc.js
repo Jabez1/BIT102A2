@@ -26,7 +26,7 @@ function costCalc(){
             cost += 50;
             break;
         default:
-            cost += 9999;
+            cost -= 9999;
     }
 
     switch(getUrlParamArray("cheese").toString()) {
@@ -40,7 +40,7 @@ function costCalc(){
             cost += 5;
             break;
         default:
-            cost += 9999;
+            cost -= 9999;
     }
 
     switch(getUrlParamArray("crust").toString()) {
@@ -52,7 +52,7 @@ function costCalc(){
             cost += 5;
             break;
         default:
-            cost += 9999;
+            cost -= 9999;
     }
     return cost;
 }

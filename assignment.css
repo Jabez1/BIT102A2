@@ -16,6 +16,9 @@ footer{
     min-height: calc(100vh - 450px);
 }
 
+* {
+    box-sizing: border-box;
+  }
 
 .logo{
     margin-right:auto;
@@ -34,6 +37,7 @@ nav{
 nav a{
     font-size: 1.5em;
     padding: 20px;
+    font-weight: bold;
 }
 
 a:link, a:visited{
