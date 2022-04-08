@@ -28,8 +28,8 @@
     /* position: absolute; */
     /* top: 30rem; */
     margin-top: 20rem;
-    color: rgb(255, 225, 0);
-    animation: infinite 1s ease-in-out fadeIn;
+    color: white;
+    animation: 2s ease-in-out fadeIn;
 }
 
 /* Menu List CSS */
